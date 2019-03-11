@@ -1,2 +1,2 @@
 # SistemaDistribuido5periodo
-teste
+.
