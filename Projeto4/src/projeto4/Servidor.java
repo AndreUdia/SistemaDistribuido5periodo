@@ -68,7 +68,6 @@ public class Servidor extends Thread {
         conexao.close();
             
       } catch (IOException ex) {
-        //Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
         System.out.println("ERRO: " + ex.getMessage());
      }
     }

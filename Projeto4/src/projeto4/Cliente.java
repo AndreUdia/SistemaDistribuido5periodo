@@ -21,7 +21,6 @@ public class Cliente extends Thread {
     
     public static void main(String[] args){
         try {
-            //System.out.println(Color.RED_BOLD + Color.YELLOW_BACKGROUND + "RED COLORED" + Color.RESET + " NORMAL");
             Socket conexao = new Socket("localhost",2000);
             PrintStream saida = new PrintStream (conexao.getOutputStream());
             
@@ -43,7 +42,6 @@ public class Cliente extends Thread {
             }
             
         } catch (IOException ex) {
-            //Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("ERRO: " + ex.getMessage());
         }
     }
@@ -69,7 +67,6 @@ public class Cliente extends Thread {
             done=true;
             
         } catch (IOException ex) {
-            //Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("ERRO: " + ex.getMessage());
         }
     }
